@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallLogManager", "CallLogManager.csproj", "{2FC8FB0F-A566-49D2-BF5E-E93232A4972B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FC8FB0F-A566-49D2-BF5E-E93232A4972B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC8FB0F-A566-49D2-BF5E-E93232A4972B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC8FB0F-A566-49D2-BF5E-E93232A4972B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC8FB0F-A566-49D2-BF5E-E93232A4972B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {916C3F8D-5736-4727-AC75-137841D72C1C}
+	EndGlobalSection
+EndGlobal
