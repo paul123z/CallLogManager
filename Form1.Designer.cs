@@ -123,7 +123,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 16, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2022, 7, 21, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
