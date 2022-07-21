@@ -32,7 +32,7 @@ namespace CallLogManager
             foreach (DataRow row in dt.Rows)
             {
                 int n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells["dgId"].Value = n + 1;
+                dataGridView1.Rows[n].Cells["dgId"].Value = row["Id"].ToString();
                 dataGridView1.Rows[n].Cells["dgFirstName"].Value = row["FirstName"].ToString();
                 dataGridView1.Rows[n].Cells["dgSurname"].Value = row["Surname"].ToString();
                 dataGridView1.Rows[n].Cells["dgAddress"].Value = row["Address"].ToString();
@@ -42,6 +42,7 @@ namespace CallLogManager
                 dataGridView1.Rows[n].Cells["dgDuration"].Value = row["Duration"].ToString();
                 dataGridView1.Rows[n].Cells["dgRemarks"].Value = row["Remarks"].ToString();
                 dataGridView1.Rows[n].Cells["dgStatus"].Value = row["Status"].ToString();
+                n++;
             }
         }
     }
