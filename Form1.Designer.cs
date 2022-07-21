@@ -51,6 +51,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
@@ -128,7 +129,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(219, 332);
+            this.button1.Location = new System.Drawing.Point(153, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 35);
             this.button1.TabIndex = 8;
@@ -223,7 +224,7 @@
             this.label10.AutoSize = true;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(219, 34);
+            this.label10.Location = new System.Drawing.Point(224, 31);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(4);
             this.label10.Size = new System.Drawing.Size(123, 32);
@@ -251,11 +252,23 @@
             // 
             this.errorProvider2.ContainerControl = this;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(299, 332);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 35);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Show";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 414);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -310,6 +323,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.Button button2;
     }
 }
 

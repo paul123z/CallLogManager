@@ -140,13 +140,40 @@ namespace CallLogManager
             }
             else
             {
-                MessageBox.Show("Data Saved");
+                Connection cn = new Connection(); //we declare cn as a new instance of connection class
+                cn.dataSend(@"INSERT INTO CallDetails
+                  (FirstName, Surname, Address, Mobile, Status, Date, Time, Duration, Remarks)
+VALUES ('"+textBox1.Text+"','" +textBox2.Text+"','" +textBox4.Text+"','" +textBox3.Text+"','" +comboBox1.Text+"','" +dateTimePicker1.Text+"','" +textBox5.Text+"','" +textBox6.Text+"','" +textBox7.Text+"')"); //here we use data send method from Connection.cs class, between quotation marks we add quety
+
+                MessageBox.Show("Saved Sucessfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clear();
+                
             }
+        }
+
+        void Clear() 
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            dateTimePicker1.Value = DateTime.Now;
+            comboBox1.SelectedIndex = -1;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CallLogManager.ViewCallDetails VCD = new ViewCallDetails();
+            VCD.StartPosition = FormStartPosition.CenterParent;
+            VCD.Show();
         }
     }
 }
